@@ -27,8 +27,9 @@ const service1SubHeading = "智能输入，事半功倍";
             <ul class="list-unstyled ul-check primary">
               <li><b>`Ctrl+C+C` 快速保存</b>：选中任意文本或富文本，一键唤出保存窗口。</li>
               <li><b>别名系统</b>：通过别名和悬浮窗智能筛选，精准匹配，一键输入。</li>
-              <li><b>应用数据流转</b>： 从WPS复制的富文本轻松输入到Word和Typora，反之亦然</li>
+              <li><b>应用数据流转</b>： 在WPS保存的富文本轻松快速输入到Word和Typora中,反之亦然</li>
               <li><b>可选模拟键盘输入</b>：轻松应对禁止粘贴的窗口。</li>
+              <li><b>可选模拟键盘输入速度</b>: 可以设置输入速度，避免输入过快导致的输入错误。</li>
             </ul>
           </div>
         </div>
