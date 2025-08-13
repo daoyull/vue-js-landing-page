@@ -1,5 +1,5 @@
 <script setup>
-import mainPhoto from "../assets/images/service2.jpg";
+
 const service2Heading = "启动与定制，随心所欲";
 const service2SubHeading = "从一键启动到个性化界面，QuickTools 让您完全掌控自己的工作流程。";
 const items = [
@@ -38,7 +38,10 @@ const items = [
           </ul>
         </div>
         <div class="col-lg-6 order-lg-2" data-aos="fade-up" data-aos-delay="400">
-          <img :src="mainPhoto" alt="Image" class="img-fluid img-shadow" />
+          <video autoplay loop muted playsinline class="img-fluid img-shadow">
+            <source src="/images/quick_run_video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
       </div>
     </div>

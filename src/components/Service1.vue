@@ -1,6 +1,6 @@
 <script setup>
 import { themeColor } from "../data/items";
-import mainPhoto from "../assets/images/service1.jpg";
+
 
 const service1Heading = "功能亮点";
 const service1SubHeading = "智能输入，事半功倍";
@@ -33,7 +33,10 @@ const service1SubHeading = "智能输入，事半功倍";
           </div>
         </div>
         <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-          <img :src="mainPhoto" alt="Image" class="img-fluid img-shadow" />
+          <video autoplay loop muted playsinline class="img-fluid img-shadow">
+            <source src="/images/quick_input_video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
       </div>
     </div>
