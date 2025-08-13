@@ -1,20 +1,16 @@
 <script setup>
 import { themeColor } from "../data/items";
-const heading = "Pricing";
-const subHeading = "Pricing for everyone. Choose your plan now!";
-const startButtonName = "Get Started";
+const heading = "价格方案";
+const subHeading = "选择适合您的方案";
+const startButtonName = "立即下载";
 const packages = [
   {
-    name: "Free",
+    name: "免费版",
     price: "0",
   },
   {
-    name: "Standard",
-    price: "19.99",
-  },
-  {
-    name: "Premium",
-    price: "79.99",
+    name: "专业版",
+    price: "??",
   },
 ];
 </script>
@@ -30,47 +26,24 @@ const packages = [
       <div class="row justify-content-center">
         <div class="col-lg-10">
           <div class="row">
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-              <div class="pricing">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="pricing active">
                 <div class="body">
                   <div class="price">
                     <span class="d-block plan">{{ packages[0].name }}</span>
                     <span class="price" :style="[{ color: themeColor }]"
-                      ><sup>$</sup><span>{{ packages[0].price }}</span></span
+                      ><sup>¥</sup><span>{{ packages[0].price }}</span></span
                     >
                   </div>
                   <ul class="list-unstyled ul-check primary mb-5">
-                    <li>There live the blind texts</li>
-                    <li>Far far away behind the word</li>
-                    <li>Far from the countries Vokalia and Consonantia</li>
-                  </ul>
-                  <p class="text-center mb-0">
-                    <a
-                      href="#"
-                      class="btn btn-outline-primary"
-                      :style="[
-                        { color: themeColor },
-                        { borderColor: themeColor },
-                      ]"
-                      >{{ startButtonName }}</a
-                    >
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-              <div class="pricing active">
-                <div class="body">
-                  <div class="price">
-                    <span class="d-block plan">{{ packages[1].name }}</span>
-                    <span class="price" :style="[{ color: themeColor }]"
-                      ><sup>$</sup><span>{{ packages[1].price }}</span></span
-                    >
-                  </div>
-                  <ul class="list-unstyled ul-check primary mb-5">
-                    <li>There live the blind texts</li>
-                    <li>Far far away behind the word</li>
-                    <li>Far from the countries Vokalia and Consonantia</li>
+                    <li>快速输入文本、富文本、模拟键盘输入</li>
+                    <li>快速启动文件、应用、文件夹、网址</li>    
+                    <li>悬浮窗实时显示输入和保存的触发键</li>
+                    <li>屏幕键盘实时显示按下的按键</li>
+                    <li>信息预览，可作为备忘录</li>
+                    <li>数据完全本地存储</li>
+                    <li>支持离线使用</li>
+                    <li>支持插件更新</li>
                   </ul>
                   <p class="text-center mb-0">
                     <a
@@ -86,34 +59,33 @@ const packages = [
                 </div>
               </div>
             </div>
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <!-- <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
               <div class="pricing">
                 <div class="body">
                   <div class="price">
-                    <span class="d-block plan">{{ packages[2].name }}</span>
+                    <span class="d-block plan">{{ packages[1].name }}</span>
                     <span class="price" :style="[{ color: themeColor }]"
-                      ><sup>$</sup><span>{{ packages[2].price }}</span></span
+                      ><sup>¥</sup><span>{{ packages[1].price }}</span></span
                     >
                   </div>
                   <ul class="list-unstyled ul-check primary mb-5">
-                    <li>There live the blind texts</li>
-                    <li>Far far away behind the word</li>
-                    <li>Far from the countries Vokalia and Consonantia</li>
+                    <li>更多高级功能</li>
+                    <li>敬请期待</li>
                   </ul>
                   <p class="text-center mb-0">
                     <a
                       href="#"
-                      class="btn btn-outline-primary"
+                      class="btn btn-outline-primary disabled"
                       :style="[
                         { color: themeColor },
                         { borderColor: themeColor },
                       ]"
-                      >{{ startButtonName }}</a
+                      >开发中</a
                     >
                   </p>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>

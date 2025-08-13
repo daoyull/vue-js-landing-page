@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/png" href="/images/dots.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vue 3 landing Page</title>
+    <title>QuickTools - 提升你的效率</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&amp;display=swap"
       rel="stylesheet"
@@ -43,6 +43,21 @@
     </div>
 
     <script type="module" src="/src/main.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          if (anchor.getAttribute('href') === '#docs') return;
+          anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+              targetElement.scrollIntoView({ behavior: 'smooth' });
+            }
+          });
+        });
+      });
+    </script>
 
     <script src="/js/jquery-3.4.1.min.js"></script>
     <script src="/js/jquery-migrate-3.0.1.min.js"></script>

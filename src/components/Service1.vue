@@ -1,24 +1,15 @@
 <script setup>
 import { themeColor } from "../data/items";
-import personPhoto from "../assets/images/person_1.jpg";
 import mainPhoto from "../assets/images/service1.jpg";
 
-const service1Heading = "Digital Services";
-const service1SubHeading = "Selling Digital Services";
-const service1Quote =
-  '"Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia."';
-const personName = "James Anderson";
-const designation = "Facebook, Product Lead";
-function youtubeVideoUrl() {
-  const youtubeVideoId = "FzRH7y3LbQE";
-  return `https://www.youtube.com/watch?v=${youtubeVideoId}&amp;t=9s`;
-}
+const service1Heading = "功能亮点";
+const service1SubHeading = "智能输入，事半功倍";
 </script>
 <template>
-  <div class="untree_co-section" id="features-section">
+  <div class="untree_co-section">
     <div class="container">
-      <div class="row justify-content-between">
-        <div class="col-lg-4">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-lg-5">
           <span
             class="caption"
             data-aos="fade-up"
@@ -31,52 +22,18 @@ function youtubeVideoUrl() {
           </h3>
           <div class="mb-4" data-aos="fade-up" data-aos-delay="200">
             <p>
-              Far far away, behind the word mountains, far from the countries
-              Vokalia and Consonantia, there live the blind texts. Separated
-              they live in Bookmarksgrove right at the coast
+              QuickTools 的快速输入功能将彻底改变您的文本操作习惯。从保存代码片段到常用语，一切都变得前所未有的简单和高效。
             </p>
             <ul class="list-unstyled ul-check primary">
-              <li>There live the blind texts</li>
-              <li>Far far away behind the word</li>
+              <li><b>`Ctrl+C+C` 快速保存</b>：选中任意文本或富文本，一键唤出保存窗口。</li>
+              <li><b>别名系统</b>：通过别名和悬浮窗智能筛选，精准匹配，一键输入。</li>
+              <li><b>应用数据流转</b>： 从WPS复制的富文本轻松输入到Word和Typora，反之亦然</li>
+              <li><b>可选模拟键盘输入</b>：轻松应对禁止粘贴的窗口。</li>
             </ul>
           </div>
-          <div class="mb-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="untree_co-testimonial d-flex">
-              <div class="text">
-                <blockquote>
-                  {{ service1Quote }}
-                </blockquote>
-                <div class="author d-flex">
-                  <div class="pic mr-3">
-                    <img :src="personPhoto" alt="Image" class="img-fluid" />
-                  </div>
-                  <div>
-                    <strong class="d-block">{{ personName }}</strong
-                    ><span class="d-block">{{ designation }}</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-        <div class="col-lg-7" data-aos="fade-up" data-aos-delay="400">
-          <a :href="youtubeVideoUrl()" class="btn-video" data-fancybox>
-            <span class="wrap-icon-play">
-              <svg
-                class="bi bi-play-fill"
-                width="1em"
-                height="1em"
-                viewBox="0 0 16 16"
-                fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"
-                />
-              </svg>
-            </span>
-            <img :src="mainPhoto" alt="Image" class="img-fluid img-shadow" />
-          </a>
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+          <img :src="mainPhoto" alt="Image" class="img-fluid img-shadow" />
         </div>
       </div>
     </div>

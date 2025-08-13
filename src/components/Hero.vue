@@ -2,9 +2,9 @@
 import mainPhoto from "../assets/images/hero.svg";
 import { themeColor } from "../data/items";
 
-const heroHeading = "Promote Your Products by Colorlib";
-const buttonSeeFeature = "See Features";
-const buttonPricing = "Pricing";
+const heroHeading = "QuickTools";
+const buttonSeeFeature = "查看功能";
+const buttonPricing = "付费方案";
 </script>
 
 <template>
@@ -27,20 +27,10 @@ const buttonPricing = "Pricing";
               </h1>
               <div class="excerpt" data-aos="fade-up" data-aos-delay="100">
                 <p>
-                  Another cool free html css template by
-                  <span
-                    style="
-                      background-color: rgba(64, 123, 255, 0.07);
-                      color: #407bff;
-                    "
-                    >Colorlib</span
-                  >
-                  Far far away, behind the word mountains, far from the
-                  countries Vokalia and Consonantia, there live the blind texts.
-                  Separated they live in Bookmarksgrove right at the coast
+                  QuickTools 是一款强大的效率工具，集快速启动、文本输入、实时提示和高度自定义功能于一体。数据完全本地存储，安全可靠。立即体验，提升您的工作效率。
                 </p>
               </div>
-              <p data-aos="fade-up" data-aos-delay="200">
+              <!-- <p data-aos="fade-up" data-aos-delay="200">
                 <a
                   href="#features-section"
                   class="btn btn-primary smoothscroll"
@@ -57,7 +47,7 @@ const buttonPricing = "Pricing";
                   :style="[{ color: themeColor }, { borderColor: themeColor }]"
                   >{{ buttonPricing }}</a
                 >
-              </p>
+              </p> -->
             </div>
           </div>
         </div>
