@@ -1,6 +1,6 @@
 <script setup>
 const copyrightText = "Copyright © 2023 QuickTools. All Rights Reserved.";
-const icpText = "京ICP备XXXXXXXX号-X"; // 请替换为您的备案号
+const icpText = "鲁ICP备XXXXXXXX号-X"; // 请替换为您的备案号
 </script>
 
 <template>
